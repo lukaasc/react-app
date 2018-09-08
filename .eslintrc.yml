@@ -1,0 +1,30 @@
+# @format
+parser: babel-eslint
+extends:
+  - airbnb
+  - prettier
+  - plugin:jest/recommended
+plugins:
+  - prettier
+  - jest
+globals:
+  document: true
+  shallow: true
+  render: true
+  mount: true
+  fetch: true
+env:
+  node: true
+  jest/globals: true
+rules:
+  prettier/prettier: error
+  newline-after-var:
+    - error
+    - always
+  newline-before-return: error
+  linebreak-style: off
+  global-require: off
+  no-plusplus: off
+  react/jsx-filename-extension: off
+  react/jsx-one-expression-per-line: off
+  react/require-default-props: off
