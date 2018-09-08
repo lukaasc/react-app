@@ -9,7 +9,7 @@
     "clean": "rimraf ./dist",
     "test:watch": "jest --watchAll --config=_config/jest.config.js",
     "test:coverage": "jest --coverage --config=_config/jest.config.js",
-    "start": "webpack -wd --env.development src/index.js --config _config/webpack.config.js",
+    "start": "webpack-dev-server --config _config/webpack.config.js --env.development",
     "prebuild": "npm run clean",
     "build": "webpack -p --env.production --config _config/webpack.config.js"
   },
@@ -58,6 +58,7 @@
     "identity-obj-proxy": "^3.0.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.14.2",
-    "style-loader": "^0.23.0"
+    "style-loader": "^0.23.0",
+    "webpack-dev-server": "^3.1.8"
   }
 }
