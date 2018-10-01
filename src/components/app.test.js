@@ -10,5 +10,6 @@ describe('<App />', () => {
     const wrapper = shallow(<App sampleStore={sampleStore} />);
 
     expect(wrapper.exists()).toBeTruthy();
+    expect(wrapper.instance().props.sampleStore).toBeInstanceOf(SampleStore);
   });
 });
