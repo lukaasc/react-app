@@ -15,7 +15,8 @@ module.exports = {
       port: 8080,
       compress: true,
       hot: true,
-      open: true
+      open: true,
+      historyApiFallback: true
     }
   },
   prod: {
